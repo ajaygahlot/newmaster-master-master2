@@ -315,7 +315,7 @@ MainActivity extends AppCompatActivity implements UsageContract.View {
                 toast.show();
                 Intent intent = new Intent(this, AgePrediction.class);
                 this.startActivity(intent);
-
+                break;
             case R.id.graph:
                 toast = Toast.makeText(getApplicationContext(),
                         "Overall usage graph",
@@ -324,7 +324,7 @@ MainActivity extends AppCompatActivity implements UsageContract.View {
                 toast.show();
                 intent = new Intent(this, overallgraph.class);
                 this.startActivity(intent);
-
+                break;
             default:
                 return super.onOptionsItemSelected(item);
         }
